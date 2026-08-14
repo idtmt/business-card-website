@@ -1,0 +1,74 @@
+
+# Python
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+
+venv/
+.venv/
+env/
+
+# Environment Variables
+
+.env
+
+# IDE
+
+.vscode/
+.idea/
+*.iml
+
+# Operating System
+
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Logs
+
+logs/
+*.log
+
+# Database
+
+*.db
+*.sqlite
+*.sqlite3
+
+# Если хочешь хранить демонстрационную БД,
+# закомментируй строки выше
+#
+# !database/booking.db
+
+# Backups
+
+backups/
+
+# Tests
+
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Type Checking
+
+.mypy_cache/
+
+# Linters
+
+.ruff_cache/
+
+# Build
+
+build/
+dist/
+*.egg-info/
+
+# Temporary Files
+
+*.tmp
+*.bak
