@@ -8,3 +8,7 @@ class LoginRequest(BaseModel):
 
 class LoginResponse(BaseModel):
     message: str
+
+
+class UserResponse(BaseModel):
+    username: str

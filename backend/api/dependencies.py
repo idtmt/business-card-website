@@ -156,16 +156,12 @@ def get_public_service_service(
 
 
 async def get_current_admin(
-    access_token: str | None = Cookie(
-        default=None,
-    ),
+    access_token: str | None = Cookie(default=None),
 ) -> str:
-    if access_token is None:
+    if not access_token:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Требуется авторизация.",
         )
 
-    return decode_access_token(
-        access_token,
-    )
+    return decode_access_token(access_token)

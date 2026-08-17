@@ -1,74 +1,89 @@
-
+#
 # Python
+#
 
 __pycache__/
 *.py[cod]
 *$py.class
 
 # Virtual Environment
-
 venv/
 .venv/
 env/
 
 # Environment Variables
-
 .env
+.env.*
+!.env.example
 
 # IDE
-
 .vscode/
 .idea/
 *.iml
 
 # Operating System
-
 Thumbs.db
 Desktop.ini
 .DS_Store
 
 # Logs
-
 logs/
 *.log
 
 # Database
-
 *.db
 *.sqlite
 *.sqlite3
 
-# Если хочешь хранить демонстрационную БД,
-# закомментируй строки выше
-#
-# !database/booking.db
-
 # Backups
-
 backups/
 
 # Tests
-
 .pytest_cache/
 .coverage
 .coverage.*
 htmlcov/
 
 # Type Checking
-
 .mypy_cache/
+.pyright/
 
 # Linters
-
 .ruff_cache/
 
 # Build
-
 build/
 dist/
 *.egg-info/
 
-# Temporary Files
+#
+# Frontend
+#
+
+node_modules/
+frontend/node_modules/
+
+# Vite
+frontend/dist/
+frontend/.vite/
+
+# Frontend environment variables
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+#
+# Temporary files
+#
 
 *.tmp
 *.bak
+*.swp
+*.swo
+
+#
+# OS / Editor
+#
+
+.history/
+.DS_Store
